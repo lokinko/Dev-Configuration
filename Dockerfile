@@ -14,6 +14,6 @@ RUN cd ~/.oh-my-zsh/custom/plugins/ && git clone https://github.com/zsh-users/zs
 	&& git clone https://github.com/zsh-users/zsh-autosuggestions && cd /home 
 
 RUN apt-get install -y sudo && sudo sed -i "s/plugins=(git.*)$/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/" ~/.zshrc \
-    && sed -i 's/ZSH_THEME=".*"/ZSH_THEME="arrow"/' ~/.zshrc && source ~/.zshrc
+    && sed -i 's/ZSH_THEME=".*"/ZSH_THEME="arrow"/' ~/.zshrc
 
 ENTRYPOINT ["/bin/zsh"]
