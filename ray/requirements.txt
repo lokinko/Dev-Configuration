@@ -1,0 +1,4 @@
+torchvision
+seaborn
+tqdm
+ray
